@@ -1,0 +1,110 @@
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+.container{
+    display: flex;
+    width: 700px;
+    justify-content: center;
+    overflow: hidden;
+    flex-direction: row;
+}
+.container-left .img1 {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.img2{
+    display: none;
+}
+.container-right{
+    width: 70%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 50px;
+}
+.container-right h4{
+    color: hsl(228, 12%, 48%);
+    font-size: 25px;
+    margin: 0;
+    font-family: 'Montserrat';
+    text-transform:uppercase;
+    opacity: 0.8;
+}
+
+.container-right p{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat';
+    padding-bottom: 5px;
+}
+.container-right h1{
+    font-family: 'Fraunces';
+}
+.price-container {
+    position: relative; /* Relative positioning for the green price container */
+    display: inline-block;
+    margin: 10px 0;
+}
+.container-right .green{
+    font-family: 'Fraunces';
+    font-size: 30px;
+    color: hsl(158, 36%, 37%);
+    margin: 10px 0;
+}
+
+.container-right .grey{
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: hsl(228, 12%, 48%);
+    text-decoration:line-through;
+    position: absolute;
+    top: 8px;
+    left: 120px;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: hsl(158, 36%, 37%);
+    border:0;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button img{
+    margin-right: 10px;
+    
+}
+
+@media (max-width: 750px){
+    .container{
+        flex-direction: column;
+        width: 100%;
+        margin: 20px;
+    }
+    .container-left .img1 {
+        display: none;
+    }
+    .img2 {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    .container-right {
+        width: 100%;
+        padding: 20px;
+    }
+}
